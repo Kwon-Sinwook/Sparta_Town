@@ -32,7 +32,7 @@ public class PlayerMove : MonoBehaviour
     private void Update()
     {
         Vector2 dir = this.transform.position - camera.transform.position;
-        Vector3 moveVector = new Vector3(dir.x * 5.0f * Time.deltaTime, dir.y * 5.0f * Time.deltaTime, 0.0f);
+        Vector3 moveVector = new Vector3(dir.x * 20f * Time.deltaTime, dir.y * 20f * Time.deltaTime, 0.0f);
         camera.transform.Translate(moveVector);
     }
 
