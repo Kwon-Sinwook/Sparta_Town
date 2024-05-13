@@ -7,6 +7,7 @@ public class PlayerMove : MonoBehaviour
 {
     private Movecontroller movecontroller;
     private Rigidbody2D rigidbody;
+    public Camera camera;
 
     private Vector2 moveDirection = Vector2.zero;
 
@@ -28,7 +29,13 @@ public class PlayerMove : MonoBehaviour
         moveDirection = direction;
     }
 
-    // Update is called once per frame
+    private void Update()
+    {
+        Vector2 dir = this.transform.position - camera.transform.position;
+        Vector3 moveVector = new Vector3(dir.x * 5.0f * Time.deltaTime, dir.y * 5.0f * Time.deltaTime, 0.0f);
+        camera.transform.Translate(moveVector);
+    }
+
     private void FixedUpdate()
     {
         ApplyMovement(moveDirection);   
