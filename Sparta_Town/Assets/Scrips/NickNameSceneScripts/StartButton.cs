@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class StartButton : MonoBehaviour
+public class StartButton : MonoBehaviour // 적은 닉네임 저장 후 메인씬으로 넘어간다.
 {
     public InputField inputName;
     private string playerName;

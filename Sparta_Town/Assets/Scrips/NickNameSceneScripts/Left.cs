@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Left : MonoBehaviour, IPointerClickHandler
+public class Left : MonoBehaviour, IPointerClickHandler //플레이어 1 (왼쪽) 선택시 정보 저장과 배경색 투명도 변화
 {
     public GameObject other;
     public void OnPointerClick(PointerEventData eventData)
