@@ -21,3 +21,7 @@
 AimRotation부터 PlayerMoveController까지는 강의 속 코드와 같습니다.
 
 필수 과제 1번 ~ 7번 전부 완료했고, 선택 요구 사항 1번까지 완료했습니다.
+
+사용한 에셋
+[https://assetstore.unity.com/packages/2d/characters/hero-nad-opponents-animation-140776] - Hero nad Opponents Animation - 캐릭터
+[https://assetstore.unity.com/packages/2d/environments/rogue-fantasy-castle-164725] - Rogue Fantasy Castle - 맵
